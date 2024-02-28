@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cj4-fe-eKW">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yellow-->
+        <scene sceneID="Gpf-Hg-1Kr">
+            <objects>
+                <viewController id="bWB-i0-ujK" customClass="YellowViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qmh-L6-ElQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJc-f8-74A">
+                                <rect key="frame" x="150.66666666666666" y="423" width="89" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mint" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="17" strokeWidth="3" strokeOutset="4">
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToMintController:" destination="bWB-i0-ujK" eventType="touchUpInside" id="3cb-wR-0df"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KqP-Th-gIz"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="TJc-f8-74A" firstAttribute="centerY" secondItem="KqP-Th-gIz" secondAttribute="centerY" id="Ii1-tu-qQS"/>
+                            <constraint firstItem="TJc-f8-74A" firstAttribute="centerX" secondItem="KqP-Th-gIz" secondAttribute="centerX" id="Pmb-Tn-1UC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="VuZ-y9-dD5"/>
+                    <connections>
+                        <segue destination="waX-Sd-5qx" kind="show" identifier="goToMint" id="qnT-fG-xrQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7T-jQ-gii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818" y="-664"/>
+        </scene>
+        <!--Mint-->
+        <scene sceneID="gAu-AF-2Jh">
+            <objects>
+                <viewController id="waX-Sd-5qx" customClass="MintViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xo6-5P-UeN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rl-JN-J2x">
+                                <rect key="frame" x="147.33333333333334" y="423" width="95.333333333333343" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Main" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="17" strokeWidth="3" strokeOutset="4">
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <color key="strokeColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToMain:" destination="waX-Sd-5qx" eventType="touchUpInside" id="Km8-2N-4EJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-zc-GRe">
+                                <rect key="frame" x="155" y="286" width="80" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="efY-ed-Fy6"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="OXR-zc-GRe" firstAttribute="centerX" secondItem="efY-ed-Fy6" secondAttribute="centerX" id="BHf-KK-4Ix"/>
+                            <constraint firstItem="2Rl-JN-J2x" firstAttribute="top" secondItem="OXR-zc-GRe" secondAttribute="bottom" constant="96" id="Ml6-aP-36J"/>
+                            <constraint firstItem="2Rl-JN-J2x" firstAttribute="centerX" secondItem="efY-ed-Fy6" secondAttribute="centerX" id="T1V-mI-rm6"/>
+                            <constraint firstItem="2Rl-JN-J2x" firstAttribute="centerY" secondItem="efY-ed-Fy6" secondAttribute="centerY" id="it7-Wz-Kb1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mint" id="5QS-gq-faw">
+                        <barButtonItem key="rightBarButtonItem" title="Red" id="pnW-SG-5nv">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="goToRedControl:" destination="waX-Sd-5qx" id="1D1-3n-Nef"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="testLabel" destination="OXR-zc-GRe" id="iN5-Kh-nhO"/>
+                        <segue destination="Zep-wA-47T" kind="show" identifier="goToRed" id="sAI-tg-ayC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3M-nm-4Z9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-665"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="Urt-zX-Bgi">
+            <objects>
+                <viewController id="5t6-xv-dfP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Noa-lt-tWl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="cQa-rM-MWb">
+                                <rect key="frame" x="94.333333333333329" y="271" width="201.66666666666669" height="359.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNl-QZ-ySX">
+                                        <rect key="frame" x="0.0" y="0.0" width="201.66666666666666" height="52.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="New game" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="strokeColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="iOb-BF-N2k" kind="show" id="OZo-7k-fXh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fio-fD-FGS">
+                                        <rect key="frame" x="0.0" y="102.3333333333333" width="201.66666666666666" height="52.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Color Screen" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="strokeColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="bWB-i0-ujK" kind="show" id="V4k-bW-C8k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE1-jh-bQw">
+                                        <rect key="frame" x="0.0" y="204.66666666666669" width="201.66666666666666" height="52.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Options" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="strokeColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="R0L-5V-vp3" kind="show" id="vQL-NS-Ap1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-Df-xFo">
+                                        <rect key="frame" x="0.0" y="307" width="201.66666666666666" height="52.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Records" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <color key="strokeColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="gVd-Qn-Luw" kind="show" id="5c4-1G-xa2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bv1-Z2-DSH"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="cQa-rM-MWb" firstAttribute="centerX" secondItem="bv1-Z2-DSH" secondAttribute="centerX" id="0dB-1g-JoR"/>
+                            <constraint firstItem="cQa-rM-MWb" firstAttribute="centerY" secondItem="bv1-Z2-DSH" secondAttribute="centerY" id="o0a-1h-3Zl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="gEe-1y-bRF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGh-LS-70e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.76923076923076" y="17.772511848341232"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="S9Z-jS-S0i">
+            <objects>
+                <viewController id="iOb-BF-N2k" customClass="GameViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Hl-kn-v5F">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра началась" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcE-oF-xTs">
+                                <rect key="frame" x="76.666666666666686" y="107.00000000000001" width="237" height="43.666666666666671"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOQ-gK-uKk">
+                                <rect key="frame" x="12" y="267.33333333333337" width="366" height="366.33333333333337"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="366.32999999999998" id="938-Aw-5A4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFO-ci-erc">
+                                <rect key="frame" x="16" y="271.66666666666669" width="358" height="358.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1iF-Oe-QIO">
+                                        <rect key="frame" x="8" y="8" width="342" height="342"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hhf-zQ-HfF">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="79.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-2H-thk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1" subtitle="" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="JYS-uq-37M"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6k6-4I-ddm">
+                                                        <rect key="frame" x="87.666666666666686" y="0.0" width="79.333333333333314" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="2" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="KHv-QP-Ye3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-0C-qSx">
+                                                        <rect key="frame" x="175" y="0.0" width="79.666666666666686" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="6SV-fL-cNY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akq-dg-N7I">
+                                                        <rect key="frame" x="262.66666666666669" y="0.0" width="79.333333333333314" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="4" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="n9W-lU-RoD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dIx-wG-2mh">
+                                                <rect key="frame" x="0.0" y="87.333333333333314" width="342" height="79.666666666666686"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s37-by-o29">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="i0a-sJ-ZdN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AC-aI-W6A">
+                                                        <rect key="frame" x="87.666666666666686" y="0.0" width="79.333333333333314" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="L22-D7-Fsp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fM-IR-GqC">
+                                                        <rect key="frame" x="175" y="0.0" width="79.666666666666686" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="7" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="YwU-LN-hm3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92x-Xo-oXC">
+                                                        <rect key="frame" x="262.66666666666669" y="0.0" width="79.333333333333314" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="8" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="LTo-d2-egc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Xq-J2-b3u">
+                                                <rect key="frame" x="0.0" y="175" width="342" height="79.333333333333314"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sR3-I9-lFw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="Ja1-2j-W6r"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0S-MP-pfz">
+                                                        <rect key="frame" x="87.666666666666686" y="0.0" width="79.333333333333314" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="10" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="Aw8-d5-tgF"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt3-mP-LdP">
+                                                        <rect key="frame" x="175" y="0.0" width="79.666666666666686" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="11" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="Yb7-0d-JiP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIx-Y7-nr5">
+                                                        <rect key="frame" x="262.66666666666669" y="0.0" width="79.333333333333314" height="79.333333333333329"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="12" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="2oo-Ac-R0R"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wnc-Rv-zQ8">
+                                                <rect key="frame" x="0.0" y="262.33333333333331" width="342" height="79.666666666666686"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A69-y6-o5s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="13" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="sCY-SZ-1TO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g21-fE-t04">
+                                                        <rect key="frame" x="87.666666666666686" y="0.0" width="79.333333333333314" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="14" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="jEh-pd-bFR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cs-Jl-EjP">
+                                                        <rect key="frame" x="175" y="0.0" width="79.666666666666686" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="15" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="axk-9u-hcl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCq-1y-2i5">
+                                                        <rect key="frame" x="262.66666666666669" y="0.0" width="79.333333333333314" height="79.666666666666671"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="16" cornerStyle="capsule">
+                                                            <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                                                <color key="strokeColor" systemColor="systemRedColor"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="pressOneButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="jnf-Hk-ssj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1iF-Oe-QIO" secondAttribute="trailing" constant="8" id="8Oi-1L-vi1"/>
+                                    <constraint firstAttribute="bottom" secondItem="1iF-Oe-QIO" secondAttribute="bottom" constant="8" id="BfG-if-wNa"/>
+                                    <constraint firstItem="1iF-Oe-QIO" firstAttribute="top" secondItem="ZFO-ci-erc" secondAttribute="top" constant="8.0000000000000142" id="TDG-gF-4tR"/>
+                                    <constraint firstAttribute="height" constant="358" id="UbL-3X-PQE"/>
+                                    <constraint firstItem="1iF-Oe-QIO" firstAttribute="leading" secondItem="ZFO-ci-erc" secondAttribute="leading" constant="8" id="yen-Dd-jKh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zW5-59-7mM">
+                                <rect key="frame" x="141" y="160.66666666666666" width="108" height="54.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VT-jP-eXw">
+                                <rect key="frame" x="351" y="207.66666666666666" width="23" height="43.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVX-2w-uvQ">
+                                <rect key="frame" x="16" y="207.66666666666666" width="23" height="43.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMo-TE-UvB">
+                                <rect key="frame" x="141" y="161" width="108" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="New" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="3" strokeOutset="4">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <color key="strokeColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="newGameButton:" destination="iOb-BF-N2k" eventType="touchUpInside" id="E5z-jz-idZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aZM-PU-Ur5"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="cOQ-gK-uKk" firstAttribute="top" secondItem="1VT-jP-eXw" secondAttribute="bottom" constant="16" id="0Ia-wT-NDJ"/>
+                            <constraint firstItem="hVX-2w-uvQ" firstAttribute="leading" secondItem="aZM-PU-Ur5" secondAttribute="leading" constant="16" id="2rv-vy-qLW"/>
+                            <constraint firstItem="cOQ-gK-uKk" firstAttribute="centerY" secondItem="aZM-PU-Ur5" secondAttribute="centerY" id="32r-8V-6TW"/>
+                            <constraint firstItem="cOQ-gK-uKk" firstAttribute="centerX" secondItem="aZM-PU-Ur5" secondAttribute="centerX" id="47x-bx-K8x"/>
+                            <constraint firstItem="zW5-59-7mM" firstAttribute="top" secondItem="EcE-oF-xTs" secondAttribute="bottom" constant="10" id="5RL-im-k70"/>
+                            <constraint firstItem="cOQ-gK-uKk" firstAttribute="top" secondItem="hVX-2w-uvQ" secondAttribute="bottom" constant="16" id="B4r-rC-jeR"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="centerX" secondItem="aZM-PU-Ur5" secondAttribute="centerX" id="CtF-dg-Ww5"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="centerY" secondItem="aZM-PU-Ur5" secondAttribute="centerY" id="ET4-7s-M6Q"/>
+                            <constraint firstItem="UMo-TE-UvB" firstAttribute="top" secondItem="EcE-oF-xTs" secondAttribute="bottom" constant="10" id="HGG-tL-7vQ"/>
+                            <constraint firstItem="aZM-PU-Ur5" firstAttribute="trailing" secondItem="cOQ-gK-uKk" secondAttribute="trailing" constant="12" id="HJH-xx-ZrQ"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="centerX" secondItem="cOQ-gK-uKk" secondAttribute="centerX" id="Iqp-nB-Xyd"/>
+                            <constraint firstItem="cOQ-gK-uKk" firstAttribute="leading" secondItem="aZM-PU-Ur5" secondAttribute="leading" constant="12" id="LLt-XO-Bwg"/>
+                            <constraint firstItem="EcE-oF-xTs" firstAttribute="top" secondItem="aZM-PU-Ur5" secondAttribute="top" constant="16" id="Pmb-tS-NLZ"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="trailing" secondItem="7Hl-kn-v5F" secondAttribute="trailingMargin" id="RJi-mW-e2b"/>
+                            <constraint firstItem="UMo-TE-UvB" firstAttribute="centerX" secondItem="aZM-PU-Ur5" secondAttribute="centerX" id="War-fM-TdB"/>
+                            <constraint firstItem="zW5-59-7mM" firstAttribute="centerX" secondItem="aZM-PU-Ur5" secondAttribute="centerX" id="fga-2s-9C3"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="leading" secondItem="aZM-PU-Ur5" secondAttribute="leading" constant="16" id="n48-5z-2Ce"/>
+                            <constraint firstItem="EcE-oF-xTs" firstAttribute="centerX" secondItem="aZM-PU-Ur5" secondAttribute="centerX" id="pKa-vb-axx"/>
+                            <constraint firstItem="aZM-PU-Ur5" firstAttribute="trailing" secondItem="1VT-jP-eXw" secondAttribute="trailing" constant="16" id="ukd-yc-G46"/>
+                            <constraint firstItem="aZM-PU-Ur5" firstAttribute="trailing" secondItem="ZFO-ci-erc" secondAttribute="trailing" constant="16" id="wrj-5T-hZd"/>
+                            <constraint firstItem="ZFO-ci-erc" firstAttribute="centerY" secondItem="cOQ-gK-uKk" secondAttribute="centerY" id="zJI-ca-jxF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title=" " id="4xz-Rm-wU1"/>
+                    <connections>
+                        <outlet property="newGame" destination="UMo-TE-UvB" id="IgT-Vz-IX0"/>
+                        <outlet property="nextDigit" destination="zW5-59-7mM" id="Pn6-Wk-R5B"/>
+                        <outlet property="statusLabel" destination="EcE-oF-xTs" id="GBT-Zx-xQd"/>
+                        <outlet property="timerLabel" destination="1VT-jP-eXw" id="kDa-gP-3BY"/>
+                        <outletCollection property="buttons" destination="6k6-4I-ddm" collectionClass="NSMutableArray" id="UR4-0g-Ib1"/>
+                        <outletCollection property="buttons" destination="ZHM-2H-thk" collectionClass="NSMutableArray" id="Br1-5Y-TcR"/>
+                        <outletCollection property="buttons" destination="akq-dg-N7I" collectionClass="NSMutableArray" id="DKi-Ns-9gy"/>
+                        <outletCollection property="buttons" destination="SeI-0C-qSx" collectionClass="NSMutableArray" id="ert-y2-na6"/>
+                        <outletCollection property="buttons" destination="2AC-aI-W6A" collectionClass="NSMutableArray" id="GiV-c6-4uA"/>
+                        <outletCollection property="buttons" destination="5fM-IR-GqC" collectionClass="NSMutableArray" id="Z5z-8T-uxU"/>
+                        <outletCollection property="buttons" destination="s37-by-o29" collectionClass="NSMutableArray" id="xFn-NQ-uaa"/>
+                        <outletCollection property="buttons" destination="92x-Xo-oXC" collectionClass="NSMutableArray" id="QuW-c8-TUL"/>
+                        <outletCollection property="buttons" destination="c0S-MP-pfz" collectionClass="NSMutableArray" id="5EG-lV-Xtt"/>
+                        <outletCollection property="buttons" destination="AIx-Y7-nr5" collectionClass="NSMutableArray" id="snY-Q0-RdT"/>
+                        <outletCollection property="buttons" destination="Wt3-mP-LdP" collectionClass="NSMutableArray" id="FI9-wa-CXt"/>
+                        <outletCollection property="buttons" destination="sR3-I9-lFw" collectionClass="NSMutableArray" id="g3x-VF-45a"/>
+                        <outletCollection property="buttons" destination="A69-y6-o5s" collectionClass="NSMutableArray" id="8bB-Go-Xia"/>
+                        <outletCollection property="buttons" destination="g21-fE-t04" collectionClass="NSMutableArray" id="vOv-ay-0Db"/>
+                        <outletCollection property="buttons" destination="5Cs-Jl-EjP" collectionClass="NSMutableArray" id="sKs-Fm-JhV"/>
+                        <outletCollection property="buttons" destination="dCq-1y-2i5" collectionClass="NSMutableArray" id="AY4-uq-zZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEc-eg-Tmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="984.61538461538453" y="17.772511848341232"/>
+        </scene>
+        <!--Red-->
+        <scene sceneID="7dh-36-rUY">
+            <objects>
+                <viewController storyboardIdentifier="redVC" id="Zep-wA-47T" customClass="RedViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iSo-SG-QFa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGG-My-aZI">
+                                <rect key="frame" x="136.33333333333334" y="423" width="117.66666666666666" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yellow" cornerStyle="dynamic">
+                                    <backgroundConfiguration key="background" cornerRadius="17" strokeWidth="3" strokeOutset="4">
+                                        <color key="backgroundColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" systemColor="systemMintColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToYellow:" destination="Zep-wA-47T" eventType="touchUpInside" id="vdE-EM-3XT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzO-z5-5kl">
+                                <rect key="frame" x="155" y="293" width="80" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BUK-tt-kPX"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="wzO-z5-5kl" firstAttribute="centerX" secondItem="BUK-tt-kPX" secondAttribute="centerX" id="5zk-hl-KOD"/>
+                            <constraint firstItem="DGG-My-aZI" firstAttribute="centerY" secondItem="BUK-tt-kPX" secondAttribute="centerY" id="ibF-A2-bKc"/>
+                            <constraint firstItem="DGG-My-aZI" firstAttribute="top" secondItem="wzO-z5-5kl" secondAttribute="bottom" constant="89" id="mL2-Fq-d39"/>
+                            <constraint firstItem="DGG-My-aZI" firstAttribute="centerX" secondItem="BUK-tt-kPX" secondAttribute="centerX" id="zwb-Fd-Z0M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red" id="Hkp-3h-jjC"/>
+                    <connections>
+                        <outlet property="redLabel" destination="wzO-z5-5kl" id="WQr-yG-5Ta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUq-Gc-jqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-665"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LSm-a3-wd0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cj4-fe-eKW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHr-fb-04H">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5t6-xv-dfP" kind="relationship" relationship="rootViewController" id="Stw-uX-Hf1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ve9-W8-Pv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818.46153846153845" y="17.772511848341232"/>
+        </scene>
+        <!--Select Time View Controller-->
+        <scene sceneID="FMw-Z6-Vlu">
+            <objects>
+                <viewController id="mDm-Qi-oGT" customClass="SelectTimeViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lbg-bC-pSX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b5u-jt-s7G">
+                                <rect key="frame" x="16" y="91" width="358" height="719"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.94799289929999997" green="0.96841150519999997" blue="0.45798510660000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" textLabel="5UB-5X-fkL" style="IBUITableViewCellStyleDefault" id="XWD-ii-L7w">
+                                        <rect key="frame" x="0.0" y="50" width="358" height="52.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XWD-ii-L7w" id="hhF-Nj-hGV">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="52.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5UB-5X-fkL">
+                                                    <rect key="frame" x="20" y="0.0" width="318" height="52.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H20-B9-fYB"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="b5u-jt-s7G" firstAttribute="top" secondItem="H20-B9-fYB" secondAttribute="top" id="0XE-wh-Jtm"/>
+                            <constraint firstItem="b5u-jt-s7G" firstAttribute="leading" secondItem="H20-B9-fYB" secondAttribute="leading" constant="16" id="0Y6-Od-aea"/>
+                            <constraint firstItem="b5u-jt-s7G" firstAttribute="centerX" secondItem="H20-B9-fYB" secondAttribute="centerX" id="Aym-lb-N5g"/>
+                            <constraint firstItem="b5u-jt-s7G" firstAttribute="centerY" secondItem="H20-B9-fYB" secondAttribute="centerY" id="FA7-N7-sgX"/>
+                            <constraint firstItem="H20-B9-fYB" firstAttribute="trailing" secondItem="b5u-jt-s7G" secondAttribute="trailing" constant="16" id="TPp-dx-kc2"/>
+                            <constraint firstItem="b5u-jt-s7G" firstAttribute="bottom" secondItem="H20-B9-fYB" secondAttribute="bottom" id="ooP-7s-OGW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9YK-1e-oOl"/>
+                    <connections>
+                        <outlet property="tableView" destination="b5u-jt-s7G" id="d9V-Es-aln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUZ-38-eAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818.46153846153845" y="1481.5165876777251"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="fef-4C-mcY">
+            <objects>
+                <tableViewController id="R0L-5V-vp3" customClass="OptionsTableViewController" customModule="NumbFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gh8-ya-Dfh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <sections>
+                            <tableViewSection id="L4q-Ck-dV9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oMb-ED-jdg">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oMb-ED-jdg" id="11y-Hl-u36">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGJ-u2-w3b">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKK-gG-S1G">
+                                                    <rect key="frame" x="319" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <color key="onTintColor" systemColor="systemIndigoColor"/>
+                                                    <connections>
+                                                        <action selector="changeTimerState:" destination="R0L-5V-vp3" eventType="valueChanged" id="iLP-N5-dTy"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UGJ-u2-w3b" firstAttribute="leading" secondItem="11y-Hl-u36" secondAttribute="leadingMargin" id="7XN-MQ-IYx"/>
+                                                <constraint firstAttribute="trailing" secondItem="MKK-gG-S1G" secondAttribute="trailing" constant="22" id="JGX-IE-XRs"/>
+                                                <constraint firstItem="MKK-gG-S1G" firstAttribute="centerY" secondItem="11y-Hl-u36" secondAttribute="centerY" id="o3X-Pq-EKe"/>
+                                                <constraint firstItem="UGJ-u2-w3b" firstAttribute="centerY" secondItem="11y-Hl-u36" secondAttribute="centerY" id="psB-vV-OjA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="selectTimeVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="TV8-rl-p0c">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TV8-rl-p0c" id="lbe-og-Tj9">
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mj6-Ts-lCm">
+                                                    <rect key="frame" x="20" y="11.333333333333336" width="67" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-2z-GGh">
+                                                    <rect key="frame" x="305" y="13" width="46.666666666666686" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mj6-Ts-lCm" firstAttribute="centerY" secondItem="lbe-og-Tj9" secondAttribute="centerY" id="IXH-vp-b4v"/>
+                                                <constraint firstItem="Lq7-2z-GGh" firstAttribute="trailing" secondItem="lbe-og-Tj9" secondAttribute="trailingMargin" id="hm4-FK-gc5"/>
+                                                <constraint firstItem="mj6-Ts-lCm" firstAttribute="leading" secondItem="lbe-og-Tj9" secondAttribute="leadingMargin" id="lXC-1b-ngH"/>
+                                                <constraint firstItem="Lq7-2z-GGh" firstAttribute="centerY" secondItem="lbe-og-Tj9" secondAttribute="centerY" id="zYH-w4-kzo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <segue destination="mDm-Qi-oGT" kind="show" identifier="selectTimeVC" id="eIL-uU-Iqw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EwJ-CK-iRS">
+                                        <rect key="frame" x="0.0" y="137.33333587646484" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EwJ-CK-iRS" id="eq0-qI-V88">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANj-32-wq7">
+                                                    <rect key="frame" x="95" y="4.3333333333333321" width="200" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="CEj-gn-fFr"/>
+                                                        <constraint firstAttribute="width" constant="200" id="qtw-Pv-ogF"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Default" cornerStyle="capsule">
+                                                        <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                            <color key="strokeColor" systemColor="labelColor"/>
+                                                        </backgroundConfiguration>
+                                                        <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="resetSettings:" destination="R0L-5V-vp3" eventType="touchUpInside" id="YFu-FX-1aK"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ANj-32-wq7" firstAttribute="centerX" secondItem="eq0-qI-V88" secondAttribute="centerX" id="58s-Kd-2yQ"/>
+                                                <constraint firstItem="ANj-32-wq7" firstAttribute="centerY" secondItem="eq0-qI-V88" secondAttribute="centerY" id="hvP-M4-Yo2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="R0L-5V-vp3" id="9Ii-qe-2X2"/>
+                            <outlet property="delegate" destination="R0L-5V-vp3" id="jjL-nX-uhS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Options" id="H26-FF-Unl"/>
+                    <connections>
+                        <outlet property="resetSett" destination="ANj-32-wq7" id="Krj-pf-Q01"/>
+                        <outlet property="switchTimer" destination="MKK-gG-S1G" id="bbP-NI-l4W"/>
+                        <outlet property="timeGameLabel" destination="Lq7-2z-GGh" id="rAB-HO-0GO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OP9-r8-72k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-818.46153846153845" y="767.7725118483412"/>
+        </scene>
+        <!--Records-->
+        <scene sceneID="fNv-Dv-Sqs">
+            <objects>
+                <viewController id="gVd-Qn-Luw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="njC-Y8-b7D">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L9v-TF-e5n"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Records" id="QXG-S2-X04"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfS-Uu-DAY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="768"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
